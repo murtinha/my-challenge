@@ -1,0 +1,1 @@
+perl -nE 'if (/\(([^,]+),\s*([^)]+)\)/) { my $line = "$1\t$2"; say $line }' 02-data.sql | sed "s/'//g" > data.tsv
